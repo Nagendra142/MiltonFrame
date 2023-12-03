@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Milton Framer Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+<!-- for flips card -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <style>
+    /* Add some custom styles here if needed */
+    .navbar {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .navbar-nav {
+      width: 100%;
+      justify-content: center;
+    }
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+
+
+    /* for moving cards */
+    @keyframes moveCards {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .font26 {
+      display: flex;
+      overflow: hidden;
+      
+      animation: moveCards 20s linear infinite;
+    }
+
+    .card {
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    /* @keyframes moveCards2 {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    } */
+
+    @keyframes moveCards2 {
+      0%, 100% {
+        transform: translateX(0%);
+      }
+      25%, 75% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(100%);
+      }
+    }
+
+    .font30 {
+      display: flex;
+      overflow: hidden;
+      /* place the time side of moveCards 10s */
+       animation: moveCards2 50s linear infinite; 
+    }
+
+
+    @keyframes moveCards3 {
+      0%, 100% {
+        transform: translateX(0%);
+      }
+      25%, 75% {
+        transform: translateX(100%);
+      }
+      50% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .font31 {
+      display: flex;
+      overflow: hidden;
+      /* place the time side of moveCards 10s */
+       animation: moveCards3 40s linear infinite; 
+    }
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
+  <div class="container">
+    <span class="navbar-brand font50"><img src="triangle.png" alt=""></span>
+    <span class="navbar-brand"><b>Milton</b></span>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <div class="bars">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#feature" style="font-family: cursive;font-size:20px;">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Testimonial" style="font-family: cursive;font-size:20px;">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing" style="font-family: cursive;font-size:20px;">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#freque" style="font-family: cursive;font-size:20px;">FAQs</a>
+                </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="font-family: cursive;font-size:20px;">Blog</a>
+        </li>
+      </ul>
+      </div>
+    <div class="bars1">
+      <ul class="navbar-nav">
+        <li class="nav-item mb-4">
+          <a class="nav-link font51" href="#" ><b>Login</b></a>
+        </li>
+        <li class="nav-item mb-3">
+          <a class="nav-link font52" href="#"><b>Get Started</b></a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler "  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+  </div>
+</nav>
+<!--Sticy-->
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+<!--/Sticky-->
+<div class="container"style="margin-top:100px;">
+  <div class="container1">
+      <div class="font1">
+    <p>An other way to manage time️</p>
+  </div>
+  <div class="font2">
+    <h1>Your new favorite calender app</h1>
+  </div>
+  <div class="font3">
+    <p>Here you should explain how cool your app is. Remember, focus on the benefits for your users, not on the features. </p>
+  </div>
+  <div class="font4">
+    <button type="submit" class="font4">Get started,it's free</button>
+    <p>Free 14 days trials,no credit card needed</p>
+  </div>
+  <div class="font5">
+    <div>
+      <img src="kids1.jpg" alt="kid1">
+      <img src="kids2.jpg" alt="kid1">
+      <img src="kids3.jpeg" alt="kid1">
+      <img src="kids4.jpeg" alt="kid1">
+      <img src="kids5.webp" alt="kid1" class="none">
+    </div>
+    <div>
+      <p>From 200+ happy users</p>
+    </div>
+  </div>
+  <div data-aos="fade-up" data-aos-duration="1500">
+  <div class="page" >
+    <img src="page.png" alt="page">
+  </div>
+</div>
+  <br>
+  <div class="middle" id="feature" data-aos="fade-up" data-aos-duration="1500">
+    <div class="inner">
+    <p>Our main features <img src="kid.webp" alt="kid1"></p>
+  </div>
+  <div class="text">
+    <p>Discover your new superpowers</p>
+  </div>
+
+
+  <!--block-->
+  <script>
+    AOS.init();
+  </script>
+
+  <!--block-->
+
+  <div class="font6">
+    <div class="font7" data-aos="zoom-in" data-aos-duration="1200">
+      <p class="font9">Seamless Scheduling</p>
+      <p class="font10">Focus on what matters most for you</p>
+      <p class="font11">Effortlessly plan your day with our intuitive drag-and-drop interface. Sync with multiple calendar platforms, import events from emails, and add participants with just a few clicks.</p>
+      
+    
+      <div class="font12"> 
+        
+        <div class="black-container">
+             <p>I tested many calendar apps. This app is the best of all! It saves me hours of time.<br/>Carla, Head of Finance </p>
+        </div>
+        <img src="head1.png" alt="head1">
+        
+      </div>
+    </div>
+    <div class="font8" data-aos="zoom-in" data-aos-duration="1200">
+      <img src="calender1.png" alt="calender">
+    </div>
+  </div>
+</div>
+
+
+<!--block-->
+
+<div class="font6">
+  <div class="font8 font15" data-aos="zoom-in-down" data-aos-duration="1200">
+    <img src="schedule.png" alt="schedule">
+  </div>
+  <div class="font7 font55" >
+    <p class="font16">Smart Reminders & Task</p>
+      <p class="font10">Never miss an important deadline or event again</p>
+      <p class="font11">Never miss an important deadline again with our AI-driven  notifications. Our app intelligently analyzes your schedule to prioritize what's most important, keeping you on track and ensuring your day is productive and stress-free.</p>
+      <div class="font13" data-aos="fade-right"> 
+        
+        <div class="black-container1">
+             <p>I love how user-friendly this app is! It's so easy to add events and set reminders!<br/>Adam, entrepreneur </p>
+        </div>
+        <div class="font14">
+        <img src="head2.png" alt="head1">
+      </div>
+      </div>
+  </div>
+</div>
+
+<!--block-->
+
+<div class="font6">
+  <div class="font7" >
+    <div>
+    <p class="font18">Seamless Scheduling</p>
+    <p class="font10">Focus on what matters most for you</p>
+    <p class="font11">Effortlessly plan your day with our intuitive drag-and-drop interface. Sync with multiple calendar platforms, import events from emails, and add participants with just a few clicks.</p>
+  </div>
+  
+    <div class="font12" data-aos="fade-right" data-aos-duration="1500"> 
+      
+      <div class="black-container">
+           <p class="font19">I've tried a lot of calendar apps, but this one is by far the best! It's so intuitive and customizable, and it has all the features I need.<br/>Annie, Designer</p>
+      </div>
+      <div class="font17" >
+      <img src="head3.jpg" alt="head1">
+    </div>
+    </div>
+  </div>
+  <div class="font8" data-aos="fade-down-left">
+    <img src="graph.png" alt="calender">
+  </div>
+</div>
+
+
+<!--block-->
+
+<div class="font6" data-aos="fade-up">
+  <div class="font8 font15">
+    <img src="notifications.png" alt="notifications">
+  </div>
+  <div class="font7">
+    <p class="font16 font56">Smart Reminders & Task</p>
+      <p class="font10">Never miss an important deadline or event again</p>
+      <p class="font11">Never miss an important deadline again with our AI-driven  notifications. Our app intelligently analyzes your schedule to prioritize what's most important, keeping you on track and ensuring your day is productive and stress-free.</p>
+      <div class="font13" data-aos="fade-left"> 
+        
+        <div class="black-container1" >
+             <p>I've recommended this app to all my friends and colleagues! <br/>Karl, CTO of a cool startup </p>
+        </div>
+        <div class="font14" ">
+        <img src="head4.jpeg" alt="head1">
+      </div>
+      </div>
+  </div>
+</div>
+
+<!--block-->
+<div class="font20" data-aos="fade-up">
+  <p>And so much more...<img src="suitcase.jpeg" alt="suitcase"></p>
+  <h1 class="font21">Our features to make your life easier</h1>
+</div>
+
+<!--block-->
+
+<div class="cards" data-aos="fade-up">
+  <div class="card card1" style="width: 18rem;">
+    <img src="first.png" class="card-img-top" alt="first">
+    <div class="card-body">
+      <h5 class="card-title" style="background-color: rgba(4, 122, 51, 0.5);">Cross-Device Sync</h5>
+      <p class="card-text">Keep your schedule in sync across all your devices, ensuring seamless access to your calendar, events, and tasks wherever you go.</p>
+    </div>
+  </div>
+
+  <div class="card card1" style="width: 20rem; ">
+    <img src="second.png" class="card-img-top" alt="second">
+    <div class="card-body card12">
+      <h5 class="card-title" style="background-color: rgb(4, 116, 122,0.5);">Auto Event Import</h5>
+      <p class="card-text">Automatically import events from emails, social media, and other sources, so you never miss a beat or have to manually input details.</p>
+    </div>
+  </div>
+
+  <div class="card card1" style="width: 18rem;">
+    <img src="third.png" class="card-img-top" alt="third">
+    <div class="card-body">
+      <h5 class="card-title" style="background-color: rgba(106, 4, 122, 0.5);">Task Delegation</h5>
+      <p class="card-text">Easily assign tasks to team members, family, or friends, promoting shared responsibility and seamless collaboration.</p>
+    </div>
+  </div>
+</div>
+
+<!--block-->
+
+<div class="cards" data-aos="fade-up">
+  <div class="card card1" style="width: 18rem;">
+    <img src="forth.png" class="card-img-top" alt="first">
+    <div class="card-body">
+      <h5 class="card-title" style="background-color: rgba(122, 4, 59, 0.5);">Voice Command Integration</h5>
+      <p class="card-text">Quickly create events, set reminders, or reschedule appointments with voice commands, thanks to compatibility with popular virtual assistants.</p>
+     
+    </div>
+  </div>
+
+  <div class="card card1" style="width: 20rem ">
+    <img src="fifth.png" class="card-img-top" alt="second">
+    <div class="card-body">
+      <h5 class="card-title" style="background-color: rgba(87, 122, 4, 0.5);">Customizable Alerts</h5>
+      <p class="card-text">Personalize notification types and timings for events, tasks, and goals, ensuring you stay on track and informed without feeling overwhelmed.</p>
+      
+    </div>
+  </div>
+
+  <div class="card card1" style="width: 18rem;">
+    <img src="sixth.png" class="card-img-top" alt="third">
+    <div class="card-body">
+      <h5 class="card-title" style="background-color: rgba(122, 49, 4, 0.5);">Privacy Protection</h5>
+      <p class="card-text">Safeguard your personal information and event details with our robust security measures, including end-to-end encryption and optional password protection.</p>
+      
+    </div>
+  </div>
+</div>
+
+<!--block-->
+ <div class="font22" id="Testimonial" data-aos="fade-up">
+  <p>They already love our products <img src="smile.jpeg" alt="smile"></p>
+  <h1>See what our users say about us</h1>
+ </div>
+<!--block-->
+
+  
+
+<!-- <div class="container">
+  <div class="card-container card3">
+    <div class="card card2">
+        <div class="font23">
+          <div>
+        <img src="kid.webp" alt="kids">
+      </div>
+      <div>
+        <h5 class="card-title">Highly recommend</h5>
+      </div>
+      </div>
+        <p class="card-text">This app has saved me so much time and stress! I used to constantly forget important dates, but now I can stay on top of everything. You should test it!</p>
+        <p>Sophie Devilan</p>
+        <p>Entrepreneur</p>
+      
+    </div>
+     <div class="card card2">
+      <div class="card-body">
+        <p><img src="kids2.jpg" alt="kids1"><h5 class="card-title"></h5></p>
+        
+        <p class="card-text">This is some content for Card 2.</p>
+      </div>
+    </div> 
+   
+  </div>
+</div> -->
+
+<!-- Bootstrap JS and Popper.js (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="font26" data-aos="fade-up">
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="kid.webp" alt="kids">
+  </div>
+  <div>
+    <h5 class="card-title">"Highly recommend"</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">This app has saved me so much time and stress! I used to constantly forget important dates, but now I can stay on top of everything. You should test it!</p>
+    <div class="font27">
+      <div class="font28">
+    <p>Sophie Devilan</p>
+  </div><div class="font29">
+    <p>Entrepreneur</p>
+  </div>
+  </div>
+  </div>
+
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="kids1.jpg" alt="kids1">
+  </div>
+  <div>
+    <h5 class="card-title">"Just love it"</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">This calendar app has been a lifesaver! I used to forget important events, but now I'm always on top of my schedule.</p>
+    <div class="font27">
+      <div class="font28">
+    <p>Adam Moore</p>
+  </div><div class="font29">
+    <p>Entrepreneur</p>
+  </div>
+  </div>
+  
+  </div>
+
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="kids2.jpg" alt="kids2">
+  </div>
+  <div>
+    <h5 class="card-title">"The best time manager app"</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">I love how user-friendly this app is! It's so easy to add events and set reminders, and it's made my life so much more organized.</p>
+    <div class="font27">
+      <div class="font28">
+    <p>Brad de Costa</p>
+  </div><div class="font29">
+    <p>Head of marketing</p>
+  </div>
+  </div>
+  
+  </div>
+
+</div>
+
+<!--block-->
+
+<div class="font30" data-aos="fade-up">
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="kids3.jpeg" alt="kids3">
+  </div>
+  <div>
+    <h5 class="card-title">“No more forgotten appointments”</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">I'm not the most organized person, but this app has made it so easy for me to stay on top of things! I love how I can set reminders and get notifications, and it's really helped me./p>
+    <div class="font27">
+      <div class="font28">
+    <p>Michel O Neil</p>
+  </div><div class="font29">
+    <p>Head of sales</p>
+  </div>
+  </div>
+  </div>
+
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="kids4.jpeg" alt="kids4">
+  </div>
+  <div>
+    <h5 class="card-title">“Better than the rest”</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">I've tried a lot of calendar apps, but this one is by far the best! It's so intuitive and customizable, and it has all the features I need. Game changer!</p>
+    <div class="font27">
+      <div class="font28">
+    <p>Annie Devy</p>
+  </div><div class="font29">
+    <p>Designer</p>
+  </div>
+  </div>
+  
+  </div>
+
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="kids5.webp" alt="kids5">
+  </div>
+  <div>
+    <h5 class="card-title">“Saves me time”</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">Since I started using this app, I've saved so much time. I no longer have to manually add appointments or set reminders - it's all done for me!</p>
+    <div class="font27">
+      <div class="font28">
+    <p>Kyle Conord </p>
+  </div><div class="font29">
+    <p>CEO of RoastingOS</p>
+  </div>
+  </div>
+  
+  </div>
+
+</div>
+
+<!--block-->
+
+<div class="font31" data-aos="fade-up">
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="head1.png" alt="kids6">
+  </div>
+  <div>
+    <h5 class="card-title">"Incredible UI"</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">The UI of this app is just awesome, so fluid and well designed. The app has also all the features I need for my daily work. Just try it, you will fall in love!</p>
+    <div class="font27">
+      <div class="font28">
+    <p>Jordan Brian</p>
+  </div><div class="font29">
+    <p>Marketing Freelance</p>
+  </div>
+  </div>
+  </div>
+
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="head2.png" alt="kids7">
+  </div>
+  <div>
+    <h5 class="card-title">“Great for teamwork”</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">If you're looking for a reliable and easy-to-use calendar app, look no further! This app has everything you need, and it's made my life so much easier</p>
+    <div class="font27">
+      <div class="font28">
+    <p>Hanna Becker</p>
+  </div><div class="font29">
+    <p>Head of Marketing</p>
+  </div>
+  </div>
+  
+  </div>
+
+  <div class="font24">
+    <div class="font25">
+      <div>
+    <img src="head3.jpg" alt="kids8">
+  </div>
+  <div>
+    <h5 class="card-title">"Life-changing”</h5>
+  </div>
+  <img src="stars.jpg" alt="stars">
+  </div>
+    <p class="card-text">This app is so simple yet so powerful! I love how I can easily add events and see my entire schedule at a glance.</p>
+    <div class="font27">
+      <div class="font28">
+    <p>Kevin Douglas</p>
+  </div><div class="font29">
+    <p>Product design at Lambda</p>
+  </div>
+  </div>
+  
+  </div>
+
+</div>
+<!--block-->
+<script type="text/javascrit">
+  function rightClick()
+  {
+      document.getElementById("changecode").innerHTML="$34";
+  }
+  
+  </script>
+
+<div class="font32" id="pricing">
+  <p>Pricing and plans <img src="bag.png" alt="bag"></p>
+  <h1 class="font57">Find the best plan for your needs</h1>
+</div>
+<!--block-->
+
+<div class="from-box" data-aos="fade-up">
+  <div class="button-box">
+        <div id="btn"></div>
+        <div class="btns">
+        <button type="button" class="toggle-btn 61"
+        onclick="leftClick()" id="color1"><p>Monthly</p></button>
+        
+        <button type="button" class="toggle-btn font60"
+        onclick="rightClick()" id="color2"><p>Annually</p></button>
+        
+      </div>
+     
+   </div> 
+ </div> 
+    <script src="index.js">
+     </script>
+    <script>
+      function rightClick(){
+        var element1=document.getElementById("color1");
+        var element2=document.getElementById("color2");
+        document.getElementById("changecode1").innerHTML="$0";
+        document.getElementById("changecode2").innerHTML="$54";
+        document.getElementById("changecode3").innerHTML="$74";
+        element1.style.background="rgba(128, 99, 216, 0.473)";
+        element1.style.width="14vw";
+        element1.style.borderRadius="10px";
+        element2.style.background="white";
+        element2.style.width="190vw";
+        element2.style.borderRadius="2px";
+      }
+      function leftClick(){
+        var element1=document.getElementById("color1");
+        var element2=document.getElementById("color2");
+        
+        document.getElementById("changecode1").innerHTML="$0";
+        document.getElementById("changecode2").innerHTML="$19";
+        document.getElementById("changecode3").innerHTML="$34";
+        element1.style.background="white";
+        element1.style.width="190vw";
+        element1.style.borderRadius="10px";
+        element2.style.background="rgba(128, 99, 216, 0.473)";
+        element2.style.width="10vw";
+        element2.style.borderRadius="2px";
+      }
+    
+    </script>
+<!--block-->
+
+<div class="font41" data-aos="fade-up">
+  <div class="font42">
+    <p class="font46"><b>Free</b></p>
+    <p>So you can see how incredible our tool is. </p>
+    <p><h1 id="changecode1">$0</h1>/mo</p>
+    <p style="font-family: cursive;">Forever</p>
+    <p class="font47"><b>Get started</b></p>
+    <p class="font48">No credit card needed</p>
+    <br>
+    <div class="font44">
+      <h3>What's included:</h3>
+      <p><img src="tick.jpeg">A cool feature</p>
+      <p><img src="tick.jpeg">A basic feature</p>
+      <p><img src="tick.jpeg">A top feature with limitations</p>
+      <p><img src="tick.jpeg">An incredible feature so useful</p>
+      <p><img src="tick.jpeg">A top feature</p>
+    </div>
+  </div>
+
+  <div class="font42">
+    <p class="font46"><b>Starter</b></p>
+    <p>So you can see how incredible our tool is. </p>
+    <p><h1 id="changecode2">$19</h1>/mo</p>
+    <p style="font-family: cursive;">Billed Monthly</p>
+    <p class="font47"><b>Get started</b></p>
+    <p class="font48">7 days free trial no credit card needed</p>
+    <br>
+    <div class="font44">
+      <h3>All Free features,plus:</h3>
+      <p><img src="tick.jpeg">A cool feature</p>
+      <p><img src="tick.jpeg">A basic feature</p>
+      <p><img src="tick.jpeg">A top feature with limitations</p>
+      <p><img src="tick.jpeg">An incredible feature so useful</p>
+      <p><img src="tick.jpeg">A top feature</p>
+    </div>
+  </div>
+
+  <div class="font42">
+    <p class="font46"><b>Pro</b></p>
+    <p>So you can see how incredible our tool is. </p>
+    <div class="font45">
+    <h1 id="changecode3">$34</h1>
+    <p>/mo</p>
+  </div>
+    <p style="font-family: cursive;">Billed monthly</p>
+    <p class="font47"><b>Get started</b></p>
+    <p class="font48">7 days free trial no credit card needed</p>
+    <br>
+    <div class="font44">
+      <h3>All Starter features,plus:</h3>
+      <p><img src="tick.jpeg">A cool feature</p>
+      <p><img src="tick.jpeg">A basic feature</p>
+      <p><img src="tick.jpeg">A top feature with limitations</p>
+      <p><img src="tick.jpeg">An incredible feature so useful</p>
+      <p><img src="tick.jpeg">A premium features</p>
+      <p><img src="tick.jpeg">You need this feature</p>
+    </div>
+  </div>
+
+</div>
+
+<!--block-->
+
+<div class="font32" id="freque" data-aos="fade-up">
+  <p>Relevant stuff, bla bla<img src="mike2.png" alt="bag"></p>
+  <h1>Frequently asked questions</h1>
+</div>
+
+<!--block-->
+
+<div class="accordin" data-aos="fade-up">
+  <div class="contentBx">
+   <div class="label"><p>Can I cancel my subscrition?</p></div>
+   <div class="content">
+     <p >You can cancel your plan whenever you’d like. You’ll be downgraded to the free plan. You won’t be locked out of any projects that have paid plans.</p>
+   </div> 
+ </div> 
+ <div class="contentBx">
+     <div class="label"><p>What happens when my trial ends?</p></div>
+     <div class="content">
+       <p >When your trial period ends, your account will automatically be downgraded to our free plan, with limited features and functionality.
+         To continue enjoying the full benefits of our service, you can upgrade to one of our paid plans at any time during or after the trial. Your data and settings will be preserved, ensuring a seamless transition as you move forward with our SaaS platform.</p>
+     </div> 
+   </div> 
+  
+   <div class="contentBx">
+     <div class="label"><p>What payment methods do you offer?</p></div>
+     <div class="content">
+       <p >We aim to provide a seamless experience for our customers. We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express, and Discover), PayPal, and bank transfers.</p>
+     </div> 
+   </div> 
+  
+   <div class="contentBx">
+     <div class="label"><p>What is your refund policy?</p></div>
+     <div class="content">
+       <p >Our refund policy is designed with customer satisfaction in mind. If you are not satisfied with our service, you can request a full refund within 30 days of your initial purchase. To initiate the refund process, please contact our support team through the "Help" 
+        section in your account or email us at support@Milton.com, and we'll be happy to assist you.</p>
+     </div> 
+   </div> 
+    
+  
+</div>
+<script>
+ const accordin=document.getElementsByClassName('contentBx');
+ for(i=0;i<accordin.length;i++){
+     accordin[i].addEventListener('click',function(){
+         this.classList.toggle('active')
+     })
+ }
+ </script>
+
+<!--block-->
+
+<div class="font33" data-aos="fade-up">
+  <p class="font35">Last call Baby!<img src="rocket.png" alt="rocket"></p>
+  <h1>Ready to start?</h1>
+  <p class="font36">Here is your last chance to explain how cool your app is. Focus on the benefits for your users, not on the features. </p>
+  <p class="font37">Get started,it's free</p>
+  <div class="font38">
+  <div class="font34">
+    <p>I never missed a call again, the AI-drivenfeature is a game changer for me!</br><br>Adam, Solo founder</p>
+  </div>
+  <img src="head1.png" alt="head1">
+</div>
+</div>
+<!--block-->
+
+<div class="font39" data-aos="fade-up">
+  <div class="font40">
+    <h3>Milton</h3>
+    <p>A short text explaining why my startup is so cool</p>
+    <p>© My super start-up</p>
+    <div class="social">
+      <img src="twitter.jpg" alt="">
+      <img src="facebook.jpeg" alt="">
+      <img src="linked.png" alt="">
+    </div>
+  </div>
+  <div class="font40">
+    <h3>Products</h3>
+    <a href="#feature">Features</a>
+    <a href="#Testimonial">Testimonials</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#freque">FAQs</a>
+  </div>
+  <div class="font40">
+    <h3>Resources</h3>
+    <a href="#">Change log</a>
+    <a href="#">Help center</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="font40">
+    <h3>Others</h3>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Affiliation</a>
+    <a href="#">Press</a>
+  </div>
+  <div class="font40">
+    <h3>From the blog</h3>
+    <a href="#">Mastering Your Schedule: Top Time Management Techniques for Balancing Work and Life</a>
+    <a href="#">Organizing Your Calendar for Enhanced Productivity and Focus</a>
+    <a href="#">The Power of Prioritization: Effective Strategies for Managing Your Time and Tasks</a>
+    <a href="#">Maximizing Your Minutes: Essential Tips for Streamlining Your Daily Routine and Calendar</a>
+  </div>
+</div>
+
+<!---->
+</div>
+</div>
+</div>
+</body>
+</html>

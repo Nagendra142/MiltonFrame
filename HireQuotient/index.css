@@ -1,0 +1,798 @@
+/* index.css */
+body{
+  overflow-x: hidden;
+  
+   background-color:rgba(238, 173, 208, 0.1) ; 
+}
+
+.bars{
+  text-align: center;
+}
+.navbar-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* sticy */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* /sticky */
+.container1{
+  padding-top:50px;
+  max-width:100%;
+    margin:0;
+    border-radius:30px;
+    height:40vh;
+    margin-right: 0px;
+    text-align:center;
+    margin-bottom:30px;
+}
+.font50 img{
+  height:20px;
+  width:20px;
+  padding-bottom:5px;
+}
+.font51{
+  border-radius:20px;
+  width:60px;
+  background-color: rgba(105, 96, 133, 0.5);
+  text-align: center;
+  
+}
+.font52{
+  margin-left:20px;
+  border-radius:10px;
+  background-color:rgba(116, 77, 232, 0.473);
+  width:150px;
+  text-align:center;
+}
+.font1{
+   align-items:center;
+   justify-content: center;
+  border-radius:30px;
+   
+  max-width:20%;
+  margin:auto;
+  background-color:rgba(128, 99, 216, 0.473);
+}
+.font2 h1{
+  font-size: 80px;
+  max-width: 60%;
+  margin:auto;
+}
+.font3{
+  max-width:40%;
+  margin:auto;
+  font-size: 20px;;
+}
+.font4 button{
+  border-radius:10px;
+  background-color:black;
+  color:white;
+  margin:10px;
+  font-size:20px;
+  padding:10px 20px;
+ 
+}
+.font5{
+  display:flex;
+  max-width:30%;
+  margin:auto;
+  padding-bottom:20px;
+}
+.font5 img{
+  height:40px;
+  border-radius: 50%;
+  margin:-7px;
+}
+.font5 p{
+  margin-left:20px;
+  margin-bottom: 40px;
+}
+.page img{
+  border-radius: 20px;
+  box-shadow: 3px 4px 5px rgba(57, 21, 21, 0.3);;
+} 
+.middle img{
+  height:40px;
+  border-radius:50%;
+}
+.middle{
+  padding-top:250px;
+ 
+
+}
+.inner{
+  max-width:20%;
+  margin:auto;
+  border-radius:20px;
+  background-color: rgba(105, 96, 133, 0.473);
+}
+.text{
+  font-size:60px;
+}
+.font6{
+  padding-top:250px;
+  display:flex;
+  max-width:100%;
+  margin:auto;
+}
+.font7{
+  margin-right: 60px;;
+}
+.font8 img{
+  height:500px;
+}
+.font7 p{
+  text-align: left;
+  font-size: 20px;
+}
+.font9{
+  border-radius:20px;
+  background-color: rgba(238, 173, 208, 0.473);
+  max-width: 40%;
+  padding-left:30px;
+}
+.font7 .font10{
+  font-size:45px;
+  margin-bottom:50px;
+}
+.font7 .font11{
+  font-size:25px;
+}
+.font12{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+.black-container{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding:10px;
+  text-align: center;
+  border-radius: 10px;
+  height: 14vh;
+  margin-left:40px
+}
+.font19{
+  font-size:10px;
+}
+.head1.png{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start ;
+  height: 9vh;
+  width: 12vws;
+}
+.font13{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+.black-container1{
+  background-color: black;
+  color: white;
+  padding-left: 15px;
+  border-radius: 10px;
+  height: 14vh;
+  margin-right:60px
+}
+ .font15{
+  margin-right:40px;
+} 
+.font15 img{
+  padding-top:50px;
+}
+.font14 img{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+   height:6vh;
+  width:6vws; 
+  
+}
+.font7 .font11{
+  font-size: 20px;
+}
+.font16{
+  border-radius:20px;
+  background-color: rgba(178, 207, 230, 0.473);
+  max-width: 50%;
+  padding-left:30px;
+}
+.font17 img{
+  height: 9vh;
+  width: 12vws;
+}
+.font18{
+  border-radius:20px;
+  background-color: rgba(238, 173, 208, 0.473);
+  max-width: 50%;
+  padding-left:30px;
+}
+.font20{
+  margin-top:100px;
+ 
+}
+.font20 p{
+  border-radius:20px;
+  max-width: 30%;
+  margin:auto;
+  background-color: rgba(178, 207, 230, 0.473);
+}
+.font20 img{
+  height:20px;
+}
+.font21{
+  padding-top:40px;
+  max-width: 50%;
+  margin:auto;
+  font-size:40px;
+}
+.cards{
+  display: flex;
+  max-width: 100%;
+  margin:auto;
+  margin-bottom:100px;
+  margin-top:100px;
+  text-align:left;
+  justify-content: center;
+}
+.cards .card{
+  margin-right:10px;
+  
+  border:0;
+  border-radius:20px;
+}
+.card1 img{
+  background: rgba(99, 109, 118,0.1);
+  padding:30px 70px;
+  height:200px;
+  border-radius:10px;
+}
+.card1 h5{
+  font-size: 15px;
+}
+.cards .card-title{
+  border-radius: 20px;
+  max-width: 80%;
+  text-align: center;
+  padding:5px 0;
+}
+.font22 p{
+  margin-top: 200px ;
+  font-family: bold;
+}
+.font22 img{
+  height:20px;
+}
+.font22 h1{
+  font-size: 50px;
+}
+.card3{
+  width: 300px; /* Increase the width */
+  height: 350px; /* Increase the height */
+  margin-right: 10px;
+  
+}
+.card2 img{
+  height:50px;
+  border-radius:50%;
+  
+}
+.card2 h5{
+  font-size: 20px;
+}
+.font23{
+  display:flex;
+  justify-content:flex-start;
+}
+.font26,.font30,.font31{
+  /* max-width:fit-content; */
+  display: flex;
+  overflow-y:hidden ;
+  margin-top:100px;
+}
+.font24{
+  border:2px solid black;
+  border-radius:10px;
+  margin:30px;
+   width:auto;
+  height:auto; 
+  padding:0 40px;
+
+}
+ 
+.font25{
+  max-width: 100%;
+  display:flex;
+}
+.font24 .card-text{
+  text-align:left;
+}
+
+.font25 img{
+  height:50px;
+  border-radius:50%;
+  
+}
+.font25 .card-title{
+  font-size: 20px;
+}
+.font27{
+  display:flex;
+  justify-content: space-between;
+
+}
+.font32{
+  margin-top:200px;
+  margin-bottom:100px;
+}
+.font32 img{
+  height:20px;
+}
+.font32 p{
+  border-radius:20px;
+  max-width:20%;
+  margin:auto;
+  background-color: rgba(105, 96, 133, 0.473);
+  margin-bottom: 40px;;
+}
+.font32 h1{
+  font-size: 50px;
+}
+.font33{
+  margin-top:200px;
+  margin-bottom:200px;
+}
+.font33 img{
+  height:20px;
+}
+.font35{
+  max-width:20%;
+  margin:auto;
+  border-radius:20px;
+  background-color: rgba(105, 96, 133, 0.473);
+}
+.font33 h1{
+  margin-top:30px;
+  font-size: 60px;
+  margin-bottom:50px;
+}
+.font33 .font36{
+  max-width: 50%;
+  margin:auto;
+  font-size: 20px;
+  margin-bottom:50px;
+}
+.font33 .font37{
+  
+  max-width:20%;
+  margin:auto;
+  padding:20px 0px;
+  border-radius:20px;
+  background-color: black;
+  color:white;
+  margin-bottom: 50px;;
+}
+.font38{
+  display:flex;
+  max-width: 50%;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin:auto;
+
+}
+.font38 img{
+  height:50px;
+  width:50px;
+}
+.font38 .font34{
+  background-color: black;
+  color:white;
+  border-radius: 10px;
+  margin-left:50px;
+  margin-right:100px;
+  padding:10px;
+  text-align:left;
+}
+
+.font39{
+  margin-top:100px;
+  padding-top:100px;
+  background-color:rgba(105, 96, 133, 0.05);
+  border-radius: 20px;;
+  max-width: 100%;
+  margin:auto;
+  display:flex;
+
+}
+.font40{
+  display: flex;
+  flex-direction: column;
+  margin:30px;
+  
+}
+.font40 a,.font40 p{
+  text-decoration: none;
+  font-size:18px;
+  text-align: left;
+  color:black;
+}
+.font40 a:hover{
+  text-decoration: underline;
+}
+.font40 img{
+  height:40px;
+  width:40px;
+  border-radius:50%;
+}
+
+/* button */
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.button-box   {
+  width: 50px;
+
+  height:50px;
+  margin:35px auto;
+  position: relative;
+  border-radius: 10px;
+  /* background:rgba(128, 99, 216, 0.473); */
+}
+.toggle-btn{
+padding: 10px 40px;
+cursor: pointer;
+background: transparent;
+border:0;
+outline: none;
+position: relative;
+text-align: center;   
+font-size: 20px;;
+}
+.font60{
+  background-color: rgba(128, 99, 216, 0.473);
+  border-radius: 10px;
+}
+.font61{
+  background-color: white;
+  border-radius: 10px;
+}
+.btns{
+  left: 0;
+  top:0;
+  position: absolute;
+  width: 100px;
+  margin-left:100px;
+  /* background: rgba(128, 99, 216, 0.473); */
+  /* border-radius: 30px; */
+  display:visible;
+}
+
+.font41{
+  display:flex;
+  max-width: 80%;
+  margin:auto;
+}
+.font42{
+  margin-left:40px;
+  background-color: rgba(255,255,255,0.7);
+  padding:30px;
+}
+.font42 {
+  text-align:left;
+}
+.font42 img{
+  height:20px;
+  width:20px;
+}
+.font45{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.font46{
+  border-radius:10px;
+  max-width: 40%;
+  text-align: center;
+  background-color: rgba(128, 99, 216, 0.373);
+  padding-top:8px;
+  height:40px;
+
+}
+.font47{
+  border-radius:10px;
+  height:40px;
+  background-color: rgba(238, 173, 208, 0.5);
+  text-align:center;
+  padding-top:8px;
+}
+.font48{
+  text-align:center;
+}
+
+/* faqs */
+
+.accordin{
+  max-width: 80%;
+  margin:auto;
+  
+ }
+ .accordin .contentBx{
+     position: relative;
+     margin: 10px 20px;
+     text-align: left;
+     
+ }
+ .accordin .contentBx .label{
+     position: relative;
+     padding: 10px;
+     background-color: rgba(128, 99, 216, 0.373);
+     color: #fff;
+     cursor: pointer;
+     border-radius:20px;
+     font-size: 20px;
+ 
+ }
+ .accordin .contentBx .label::before{
+     content: '+';
+     position: absolute;
+     top:50%;
+     right: 20px;
+     transform:translateY(-50%);
+     font-size: 30px;
+    
+ }
+ .accordin .contentBx.active .label::before{
+     content: '-';
+     
+ }
+ 
+ .accordin .contentBx .content{
+     background: white;
+     position: relative;
+     height: 0;
+     overflow: hidden;
+     transition: 0.5s;
+     overflow-y: auto;
+ }
+ .accordin .contentBx.active .content{
+     padding: 10px;
+     height: 60px;
+ }
+ 
+
+ /* Smaller screens */
+
+ @media only screen and (max-width:600px){
+  /* .button-box{
+    
+  width: 39px;
+  height:50px;
+  margin:15px auto;
+  position: relative;
+  border-radius: 10px;
+  font-size: 10px;
+  }
+  .btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 10px; }*/
+
+  
+  body{
+    position:relative;
+  }
+  .font1{
+    max-width: 60%;
+    margin:auto;
+    font-size:15px;
+  }
+  .font2{
+    max-width: 100%;
+    margin:auto;
+  }
+  .font2 h1{
+    font-size:35px;
+    margin-bottom:40px;
+  }
+  .container1 .font3 p{
+    max-width: 100%;
+    margin:auto;
+    font-size:15px;
+  }
+  .font4 button{
+    margin-top:50px;
+  }
+  .font4 p{
+    font-size:10px;
+  }
+  .font5{
+    display:flex;
+    max-width:80%;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+  }
+  .font5 img{
+    height:20px;
+
+  }
+  .none{
+    display:none;
+  }
+  .font5 p{
+    font-size:15px;
+  }
+  .page img{
+    width:100%;
+  }
+  .inner{
+    max-width:60%;
+    margin-top:-150px;
+
+  }
+  .inner p{
+    font-size: 15px;
+  }
+  .inner img{
+    height:20px;
+  }
+  .text{
+    font-size:40px;
+  }
+  .font6{
+    width:100%;
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .font9{
+    max-width:60%;
+    margin:auto;
+    
+  }
+  .font7{
+    margin-top:-100px;
+  }
+  .font7 .font9{
+    font-size: 15px;;
+  }
+ .font7 .font10{
+    font-size: 30px;;
+  }
+  .font7 .font11{
+    font-size: 15px;;
+  }
+  .font12 .black-container p{
+    font-size: 15px;;
+  }
+  .font8 img{
+    margin-top:100px;
+  
+  }
+  .font15 img{
+    margin-top:-100px;
+  }
+  .font55{
+    margin-top:50px;
+  }
+  .font16{
+    max-width: 80%;
+    margin:auto;
+  }
+  .font18{
+    max-width: 80%;
+    margin:auto;
+  }
+  .font7 .font56 {
+    margin-top:100px;
+  }
+  .font20 p{
+    max-width:60%;
+    margin:auto
+  }
+  .font20 h1{
+    font-size: 30px;
+  }
+  .cards{
+    max-width: 70%;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    justify-content: center;
+    text-align:center;
+  }
+  .card{
+    margin-top:150px;
+  }
+ .card .card12 {
+    height:200px;
+  }
+  .font22 h1{
+    font-size: 30px;
+  }
+  
+
+  .font32 p{
+    max-width:80%;
+    margin:auto;
+    margin-bottom:50px;
+  }
+  .font41{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .font42{
+    margin-top:100px;
+  }
+  .font32 h1{
+    font-size: 30px;;
+  }
+  .accordin .contentBx{
+    width: 100%;
+  }
+  .accordin .contentBx p{
+    font-size: 15px;
+    text-align: left;
+    justify-content: center;
+    padding-top:10px;
+  }
+  .font33 .font35{
+    max-width: 60%;
+  }
+  .font33 h1{
+    font-size: 30px;
+  }
+  .font33 .font36{
+    font-size: 15px;
+  }
+  .font33 .font37{
+    max-width: 40%;
+  }
+  .font33 .font34 {
+    display:none;
+  }
+  .font33 img{
+    display:none;
+  }
+  .font39{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    text-align:center;
+
+  }
+  .font39 .font40 a{
+    text-align:center;
+  }
+  .btns{
+    max-width: 100%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    margin-right:40px;
+  }
+  .btns p{
+    font-size: 15px;
+    
+  }
+ }
